@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+color: rgb(3, 31, 97);
+background-image: linear-gradient(rgba(119, 236, 119, 0.044),rgba(123, 201, 237, 0.033));
+
+}
+/* text shadow for all h1 tags*/
+body h1{
+    text-shadow: 2px 2px 5px rgba(82, 173, 242, 0.535);
+}
+/*navbar styling. this is stick navbar*/
+.navbar{
+    background-color: rgba(251, 251, 251, 0.259);
+    width: 100%;
+    height: 60px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(137, 197, 214, 0.148);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+/*menu items are arenged i flexbox */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu-item{
+    padding: 5px;   
+    list-style-type:none;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(50, 183, 235);
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu li a:hover{
+    color: rgb(13, 98, 135);
+    font-size: 16px;
+    font-weight:900 ;
+}
+
+/*main styling by grid layout*/
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    margin-top: 10px;
+    height: fit-content;
+
+}
+.main  .main-1{
+    margin: 20px;
+    padding: 20px 25px;
+
+}
+/*background image is used in main-2*/
+.main  .main-2{
+    background-image: url(./asset/rade2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    height: 600px;
+    
+ 
+}
+/* get started button*/
+.main .btn{
+    background-image: linear-gradient(rgb(119, 236, 119)10%,rgb(87, 189, 237));
+    padding: 20px 30px;
+    margin: 5px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: whitesmoke;
+    box-shadow: 5px 5px 7px rgba(87, 189, 237, 0.556) ;
+}
+.main .btn:hover{
+    background-image:linear-gradient(rgb(87, 189, 237)50%,rgb(119, 236, 119)) ;
+    padding: 22px 32px;
+    box-shadow: 5px 5px 10px rgba(87, 189, 237, 0.656) ;
+    cursor: pointer;
+}
+
+.features{
+    background-color: rgba(164, 218, 249, 0.164);
+    padding: 20px 5px;
+
+}
+/*features items styling by grid layout*/
+.f-items{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 5px;
+}
+.f-items .item-1, .item-2, .item-3, .item-4{
+    text-align: center;
+    margin: 10px 20px;
+    
+}
+/*google icons used in features.*/
+#features-material-icons{
+    background-color:rgba(164, 218, 249, 0.134) ;
+    border-radius: 40%;
+    box-shadow: 5px 5px 5px rgba(148, 232, 204, 0.568) ;
+}
+
+
+
+.courses{
+   margin: 10px;
+
+}
+/*courses styling by grid layout*/
+.cards{    
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 20px;
+    grid-auto-columns: 300px,auto;
+}
+
+.card-1, .card-3{
+background-color:white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 2px 2px 5px rgba(148, 232, 204, 0.568);
+
+}
+.card-1:hover, .card-3:hover{
+    padding: 30px;
+    border: 1px solid rgba(3, 31, 97, 0.502) ;
+    box-shadow: 10px 10px 10px rgba(148, 232, 204, 0.186);
+}
+/*styled seperately for heighliting course-2*/
+.card-2{
+    background-color:white;
+padding: 30px;
+border: 1px solid rgba(3, 31, 97, 0.502) ;
+border-radius: 10px;
+box-shadow: 10px 10px 10px rgba(148, 232, 204, 0.186);
+}
+.cards ul li{
+    padding: 10px;
+}
+/*choose paln button styling*/
+#choose-plan{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin:10px 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(3, 31, 97, 0.837);
+     
+}
+#choose-plan:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(8, 56, 169, 0.837) ;
+    background-color: rgba(8, 56, 169, 0.837);
+}
+/*about  styling by grid layout*/
+.about-1, .about-2{
+    display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+   max-height: auto;
+    text-align: center;
+    align-items: center;
+}
+/*background image used in about-1 and about-2*/
+#a-item-1{
+    background-image: url(./asset/about-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+   
+}
+
+/*review styling by grid layout*/
+.review-items{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-columns: minmax(400px, 1fr );
+    margin: 10px;
+}
+/*flickity carousel styling*/
+.carousel-cell {
+    width: 80%;
+    height: 300px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgba(164, 218, 249, 0.164);
+    border-radius: 10px;
+  }
+
+  /* contact section styling by grid layout */
+.container-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    padding: 0px 25px;
+}
+
+.contact-form{
+    padding: 20px 35px;
+    max-width: 500px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgba(148, 232, 204, 0.445);
+    font-weight: bold;
+}  
+.contact-form span p{
+    margin-top: 20px;
+}
+/*contact form components styling*/
+input[type="text"],input[type="email"],textarea{
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid rgba(164, 218, 249, 0.795) ;
+    border-radius: 7px;
+}
+/*send massage button styling*/
+input[type="submit"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(77, 185, 228) ;
+    box-shadow: 5px 5px 5px rgba(77, 185, 228, 0.486) ;
+}
+input[type="submit"]:hover{
+    padding: 12px 22px;
+    background-color: rgb(30, 174, 231) ;
+    
+
+}
+
+/*to remove list style in meadia tags*/
+.media ul li{
+    list-style-type: none;
+    padding: 15px 10px;
+}
+/*to remove links styling*/
+.media ul li a{
+    text-decoration: none;
+    color: rgba(30, 52, 103, 0.966);
+}
+/*footer styling*/
+footer{
+    background-color:rgb(30, 174, 231) ;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+/*media quries started&*/
+@media screen and (max-width:600px) {
+    /*for mobile phone navbar text size is to smaller*/
+    .menu li a{
+      
+        font-size: 15px;
+    }
+    .menu li a:hover{
+        font-size: 13px;      
+    }
+    /*decresing size of grid items to get fit for mobile phones*/
+    .main{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(390px,1fr));
+    } 
+    .main  .main-2{
+        height: 300px;
+    }
+    /*decresing size of grid items to get fit for mobile phones*/
+    .about-1, .about-2{
+        display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(380px,1fr));
+       max-width: 380px;
+     
+    }
+      /*decresing size of grid items to get fit for mobile phones*/
+    .container-form{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px,1fr));
+    }
+
+  /*If you like my code please check me out on Github= rohitgite03 */
+
+}
+
+
